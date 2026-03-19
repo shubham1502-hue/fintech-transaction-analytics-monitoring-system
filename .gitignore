@@ -1,0 +1,44 @@
+# ======================
+# Python cache & builds
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ======================
+# Environment files
+# ======================
+.env
+.env.*
+
+# ======================
+# Jupyter / notebooks
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# OS / system files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Data files
+# ======================
+# Ignore full datasets
+data/raw/transactions_raw.csv
+data/processed/transactions_clean.csv
+
+# Allow only sample datasets
+!data/raw/*_sample.csv
+!data/processed/*_sample.csv
+
+# ======================
+# Temporary / local scripts
+# ======================
+
+# ======================
+# Logs & misc
+# ======================
+*.log

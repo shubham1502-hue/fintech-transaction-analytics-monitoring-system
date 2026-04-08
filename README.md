@@ -1,4 +1,4 @@
-# 💳 Fintech Transaction Monitoring System
+# Fintech Transaction Monitoring System
 
 Simulates real-world transaction monitoring used by fintech companies like Slice, Razorpay, and Paytm.
 
@@ -6,16 +6,16 @@ End-to-end analytics system that simulates how fintech companies monitor transac
 
 ---
 
-## 🔗 Live Dashboard
+## Live Dashboard
 
 Explore the interactive dashboard here:  
-👉 https://public.tableau.com/views/PaymentsTransactionsAnalyticsMonitoring/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+https://public.tableau.com/views/PaymentsTransactionsAnalyticsMonitoring/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 No setup required - explore filters, drill-downs, and risk patterns directly.
 
 ---
 
-## 🚀 Problem
+## Problem
 
 Payment systems process thousands of transactions per minute. Even small failure rates can lead to:
 
@@ -28,7 +28,7 @@ This project replicates a **real-world monitoring setup** used by fintech teams 
 
 ---
 
-## 🧠 What this project demonstrates
+## What this project demonstrates
 
 - Business-first data analysis  
 - KPI design & monitoring  
@@ -36,11 +36,11 @@ This project replicates a **real-world monitoring setup** used by fintech teams 
 - Dashboard storytelling  
 - Risk & fraud detection logic  
 
-👉 Not just a dashboard - this is a **decision-support system**
+Not just a dashboard - this is a **decision-support system**
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Raw Data → Python Processing → SQL Analysis → Tableau Dashboard
@@ -66,7 +66,7 @@ Raw Data → Python Processing → SQL Analysis → Tableau Dashboard
 
 ---
 
-## 📊 Key KPIs
+## Key KPIs
 
 - **Total GMV**
 - **Failed GMV**
@@ -75,7 +75,7 @@ Raw Data → Python Processing → SQL Analysis → Tableau Dashboard
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 - Failures are heavily driven by **UNKNOWN errors** (system-level issue)
 - Failure rates spike **post 7 PM**, indicating peak-load stress
@@ -85,7 +85,7 @@ Raw Data → Python Processing → SQL Analysis → Tableau Dashboard
 
 ---
 
-## 💡 Business Impact
+## Business Impact
 
 If deployed in production, this system would:
 
@@ -96,7 +96,7 @@ If deployed in production, this system would:
 
 ---
 
-## 🎯 Key Questions Answered
+## Key Questions Answered
 
 - What are the main drivers of failed transactions?
 - When do failures spike and why?
@@ -106,7 +106,7 @@ If deployed in production, this system would:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python** - data generation & preprocessing  
 - **SQL** - analytical queries  
@@ -114,7 +114,7 @@ If deployed in production, this system would:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 fintech-transaction-analytics-monitoring-system/
@@ -149,15 +149,15 @@ fintech-transaction-analytics-monitoring-system/
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ![Dashboard](dashboard/screenshots/fintech_dashboard_preview.png)
 
-🔗 Interactive version: https://public.tableau.com/views/PaymentsTransactionsAnalyticsMonitoring/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+Interactive version: https://public.tableau.com/views/PaymentsTransactionsAnalyticsMonitoring/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -186,7 +186,7 @@ python src/dataset_validation.py
 
 ---
 
-## 🚨 Risk Detection Logic
+## Risk Detection Logic
 
 Rule-based detection using:
 
@@ -197,7 +197,7 @@ Rule-based detection using:
 
 ---
 
-## 🧠 Decisions & Trade-offs
+## Decisions & Trade-offs
 
 - **Rule-based fraud detection over ML**: Chosen for interpretability, faster iteration, and lower data requirements. In early-stage systems, explainability is critical for ops teams.
 - **KPI-first monitoring**: Prioritized GMV, Success Rate, and Failed GMV to directly track business impact (revenue and reliability) instead of starting with complex models.
@@ -207,7 +207,7 @@ Rule-based detection using:
 
 ---
 
-## 💡 Future Improvements
+## Future Improvements
 
 - Real-time streaming pipeline  
 - ML-based fraud detection  
@@ -216,6 +216,6 @@ Rule-based detection using:
 
 ---
 
-## 👤 Author
+## Author
 
 Shubham Singh

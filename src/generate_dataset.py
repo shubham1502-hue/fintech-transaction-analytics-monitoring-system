@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import random
+from pathlib import Path
 
 np.random.seed(42)
 
@@ -109,6 +110,10 @@ columns = [
 
 df = pd.DataFrame(data, columns=columns)
 
-df.to_csv("transactions.csv", index=False)
+raw_dir = Path("data/raw")
+raw_dir.mkdir(parents=True, exist_ok=True)
+output_path = raw_dir / "transactions_raw.csv"
 
-print("Dataset generated: transactions.csv")
+df.to_csv(output_path, index=False)
+
+print(f"Dataset generated: {output_path}")

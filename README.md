@@ -1,5 +1,21 @@
 # Fintech Transaction Monitoring System
 
+## Problem This Solves
+
+Fintech teams lose revenue and user trust when payment failures are visible only after someone manually investigates logs. The core problem is turning transaction data into a failure, risk, and merchant-health command center.
+
+## How It Helps
+
+- Generates a realistic payments dataset and validates failure rates, unexplained failures, merchant concentration, peak-hour issues, bank variance, and fraud flags.
+- Gives founders and fintech operators a starter analytics layer for failed GMV, success rate, risk signals, and operational root-cause questions.
+- Pairs Python generation and validation with SQL modules and Tableau-ready dashboarding.
+
+## When To Fork This
+
+- Fork this if you are building payment ops, fintech risk analytics, merchant monitoring, or transaction reliability reporting.
+- Fork it when your team needs to know which failures are product reliability issues, bank/provider issues, merchant issues, or suspicious user behavior.
+- Swap the synthetic generator for your PSP, bank, or transaction exports, then adapt the SQL and dashboard views.
+
 **End-to-end payments analytics pipeline** monitoring 50,000+ transactions 
 across GMV tracking, failure diagnosis, risk scoring, and merchant analytics.
 
@@ -86,14 +102,18 @@ Raw Data → Python Processing → SQL Analysis → Tableau Dashboard
 pip install -r requirements.txt
 
 # 2. Generate synthetic dataset
-python src/generate_dataset.py
+python3 src/generate_dataset.py
 
 # 3. Validate dataset
-python src/dataset_validation.py
+python3 src/dataset_validation.py
 
 # 4. Run SQL queries in your client against the processed data
 # 5. Open dashboard/tableau_dashboard.twbx in Tableau
 ```
+
+Optional MySQL export uses environment variables from `.env.example`:
+`MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_USER`, `MYSQL_PASSWORD`, and
+`MYSQL_DATABASE`. Do not hardcode database credentials in source files.
 
 ---
 
@@ -107,5 +127,5 @@ Mirrors monitoring infrastructure used by fintech ops and product teams to:
 
 ---
 
-*Part of a portfolio targeting analyst roles at Series A+ startups.*  
+*Part of a founder/operator toolkit for people building practical startup operating systems.*  
 *[← Back to Profile](https://github.com/shubham1502-hue)*

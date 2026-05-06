@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("transactions.csv")
+df = pd.read_csv("data/raw/transactions_raw.csv")
 
 print("Total rows:", len(df))
 

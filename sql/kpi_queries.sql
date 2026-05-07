@@ -8,7 +8,7 @@ FROM transactions_clean
 WHERE status = 'FAILED';
 
 -- Success Rate
-SELECT 
+SELECT
     ROUND(SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS success_rate
 FROM transactions_clean;
 

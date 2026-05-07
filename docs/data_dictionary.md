@@ -23,14 +23,14 @@ This dataset represents simulated payment transactions used for monitoring syste
 
 ## Derived Fields
 
-- **Failure Rate** → % of failed transactions  
-- **Failed GMV** → Total value of failed transactions  
-- **Success Rate** → % of successful transactions  
-- **Risk Level** → Based on transaction patterns and rules  
+- **Failure Rate** → % of failed transactions
+- **Failed GMV** → Total value of failed transactions
+- **Success Rate** → % of successful transactions
+- **Risk Level** → Based on transaction patterns and rules
 
 ---
 
 ## Notes
 
-- UNKNOWN failures represent system-level or unidentified errors  
-- Data is synthetically generated to simulate real-world scenarios  
+- UNKNOWN failures represent system-level or unidentified errors
+- Data is synthetically generated to simulate real-world scenarios

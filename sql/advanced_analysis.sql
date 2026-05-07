@@ -1,5 +1,5 @@
 -- Hourly failure trend (Peak load logic)
-SELECT 
+SELECT
     HOUR(timestamp) AS hour,
     COUNT(*) AS total_txns,
     SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END) AS failed_txns,

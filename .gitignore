@@ -2,9 +2,11 @@
 # Python cache & builds
 # ======================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # ======================
 # Environment files
@@ -12,6 +14,9 @@ __pycache__/
 .env
 .env.*
 !.env.example
+.venv/
+venv/
+env/
 
 # ======================
 # Jupyter / notebooks
@@ -31,13 +36,27 @@ Thumbs.db
 data/raw/transactions_raw.csv
 data/processed/transactions_clean.csv
 
+# Ignore legacy root-level generated files
+transactions.csv
+transactions_clean.csv
+
 # Allow only sample datasets
 !data/raw/*_sample.csv
 !data/processed/*_sample.csv
 
 # ======================
-# Temporary / local scripts
+# Local generated exports and scratch outputs
 # ======================
+exports/
+local_exports/
+outputs/
+tmp/
+scratch/
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.pkl
 
 # ======================
 # Logs & misc

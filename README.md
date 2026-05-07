@@ -24,6 +24,21 @@ monitor payment health and diagnose revenue leakage in real time.
 
 ---
 
+## Use This In Your Company
+
+- Use it as a transaction analytics starter for fintech, payments, wallet, or banking operations teams.
+- Keep the pipeline: sample transactions, monitoring logic, anomaly outputs, and dashboard-ready tables.
+- Replace sample transaction data with your own sanitized processor, bank, or internal export.
+
+## Minimum Edits To Make It Yours
+
+- transaction schema mapping
+- failure/anomaly thresholds
+- customer or merchant segments
+- dashboard labels
+
+The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+
 ## Key Metrics
 
 | Metric | Value |

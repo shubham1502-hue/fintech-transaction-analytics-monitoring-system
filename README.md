@@ -34,12 +34,16 @@ This repo is designed to be forked into an internal company workflow. Fork it, r
 
 ## Minimum Edits To Make It Yours
 
-- transaction schema mapping
-- failure/anomaly thresholds
-- customer or merchant segments
-- dashboard labels
+Change these first:
 
-The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+| Edit | Where | Why |
+|---|---|---|
+| Map your transaction schema. | `docs/data_dictionary.md` and `data/raw/transactions_raw_sample.csv` | Ensures fields like status, amount, merchant, payment method, and timestamp line up. |
+| Replace validation rules. | `src/dataset_validation.py` | Keeps bad data, missing fields, and impossible transactions from polluting analysis. |
+| Tune anomaly and risk thresholds. | `sql/risk_analysis.sql` and `sql/kpi_queries.sql` | Makes alerts fit your fraud, failure, or operations tolerance. |
+| Update dashboard labels and business questions. | `docs/project_walkthrough.md` and SQL files | Makes the output readable for ops, risk, or payments leadership. |
+
+You can leave the sample pipeline, dashboard screenshot structure, and SQL organization alone on the first fork. First get your schema mapped; threshold tuning comes next.
 
 ## Key Metrics
 

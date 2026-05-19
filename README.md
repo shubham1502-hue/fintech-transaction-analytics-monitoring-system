@@ -4,6 +4,10 @@ Transaction monitoring workflow for failed GMV, payment reliability, SQL diagnos
 
 <!-- FOUNDER_OS_STANDARD_README -->
 
+## Portfolio role
+
+This is a supporting fintech analytics repo focused on transaction reliability, failed GMV, SQL diagnostics, and BI-ready monitoring outputs. It is useful for payments and data-ops roles, but it should not compete with the flagship Founder OS operating-system repos.
+
 ## The founder problem
 
 Payment systems can process volume while still leaking revenue through preventable failures, bank or provider issues, peak-hour reliability problems, and risk signals. Founders need to know where reliability is breaking and what to investigate first.
